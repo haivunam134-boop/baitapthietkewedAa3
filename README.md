@@ -41,6 +41,7 @@ Dự án **Premier League Vietnam Hub** là sản phẩm Bài tập lớn A3 mô
 ├── README.md
 ├── AI_LOG.md
 └── RELEASE_NOTES.md
+```
 ## 📁 Cấu trúc thư mục dự án
 - [Hồ sơ GitHub tác giả] [https://github.com/haivunam134-boop]
 - [Repository và mã nguồn][https://haivunam134-boop.github.io/baitapthietkewedAa3/]
