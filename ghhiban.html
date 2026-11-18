@@ -1,0 +1,380 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bảng Xếp Hạng Vua Phá Lưới | Premier League Hub</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* MENU MOBILE KHÔNG CẦN JAVASCRIPT */
+    .menu-toggle {
+      display: none;
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      cursor: pointer;
+      font-size: 25px;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 8px;
+      user-select: none;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .header-inner {
+        position: relative;
+        flex-wrap: wrap;
+      }
+
+      .mobile-menu-btn {
+        display: block;
+        margin-left: auto;
+      }
+
+      .main-nav {
+        display: none;
+        width: 100%;
+        order: 3;
+      }
+
+      .menu-toggle:checked ~ .main-nav {
+        display: block;
+      }
+
+      .main-nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        padding: 10px 0;
+      }
+
+      .main-nav li {
+        width: 100%;
+      }
+
+      .main-nav a {
+        display: block;
+        padding: 12px 15px;
+      }
+
+      .desktop-only-cta {
+        display: none !important;
+      }
+
+      .mobile-only-cta {
+        display: block !important;
+      }
+
+      .top3-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .order-first-mobile {
+        order: -1;
+      }
+
+      .section-head {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+      }
+
+      .search-club,
+      .search-club input {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .table-wrap {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .pl-table {
+        min-width: 650px;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+      }
+
+      .scorer-hero h1 {
+        font-size: clamp(25px, 6vw, 38px);
+      }
+
+      .scorer-hero p {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        width: 92%;
+      }
+
+      .podium-card {
+        padding: 20px 15px;
+      }
+
+      .player-avatar-img {
+        max-width: 120px;
+      }
+
+      .goal-stat strong {
+        font-size: 30px;
+      }
+
+      .section-block {
+        padding-top: 25px;
+        padding-bottom: 25px;
+      }
+
+      .standings-box {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a href="index.html" class="brand">
+        <span class="brand-badge">PL</span>
+        <div class="brand-text">
+          <span class="brand-title">PREMIER LEAGUE</span>
+          <span class="brand-sub">Vietnam Fan Hub</span>
+        </div>
+      </a>
+
+      <!-- Checkbox điều khiển menu bằng CSS -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+      <label for="menu-toggle" class="mobile-menu-btn" aria-label="Mở hoặc đóng menu">
+        ☰
+      </label>
+
+      <nav class="main-nav" id="mainNav" aria-label="Điều hướng chính">
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="index.html#clubs">Câu lạc bộ</a></li>
+          <li><a href="index.html#standings">Bảng xếp hạng</a></li>
+          <li><a href="ghhiban.html" class="active-link">⚽ Vua phá lưới</a></li>
+          <li class="mobile-only-cta">
+            <a href="index.html" class="btn-live">&larr; Về Trang Chủ</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="index.html" class="btn-live desktop-only-cta">
+        &larr; Về Trang Chủ
+      </a>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PHẦN GIỚI THIỆU -->
+    <section class="scorer-hero">
+      <div class="container">
+        <span class="pill-tag">GOLDEN BOOT RACE • MÙA GIẢI 2026/27</span>
+        <h1>Bảng Xếp Hạng Cầu Thủ Ghi Bàn</h1>
+        <p>
+          Thống kê số bàn thắng, kiến tạo của các chân sút xuất sắc nhất Ngoại Hạng Anh.
+        </p>
+      </div>
+    </section>
+
+    <!-- TOP 3 CẦU THỦ -->
+    <section class="section-block">
+      <div class="container">
+
+        <div class="top3-grid">
+
+          <!-- HẠNG 1 -->
+          <article class="podium-card gold order-first-mobile">
+            <span class="rank-badge">👑 #1 DẪN ĐẦU</span>
+
+            <div class="player-avatar-img">
+              <img
+                src="ghiban/erling-haaland-electric-bl.webp"
+                alt="Erling Haaland">
+            </div>
+
+            <h3>Erling Haaland</h3>
+            <span class="player-club">Manchester City</span>
+
+            <div class="goal-stat">
+              <strong>14</strong>
+              <span>Bàn thắng (2 Kiến tạo)</span>
+            </div>
+          </article>
+
+          <!-- HẠNG 2 -->
+          <article class="podium-card silver">
+            <span class="rank-badge">#2</span>
+
+            <div class="player-avatar-img">
+              <img
+                src="ghiban/images.jpg"
+                alt="Mohamed Salah">
+            </div>
+
+            <h3>Mohamed Salah</h3>
+            <span class="player-club">Liverpool FC</span>
+
+            <div class="goal-stat">
+              <strong>11</strong>
+              <span>Bàn thắng (7 Kiến tạo)</span>
+            </div>
+          </article>
+
+          <!-- HẠNG 3 -->
+          <article class="podium-card bronze">
+            <span class="rank-badge">#3</span>
+
+            <div class="player-avatar-img">
+              <img
+                src="ghiban/3333x5000_Avatar_Image_Men_26_27_Palmer_SF_Home_26_27_RGB_cnce6g.webp"
+                alt="Cole Palmer">
+            </div>
+
+            <h3>Cole Palmer</h3>
+            <span class="player-club">Chelsea FC</span>
+
+            <div class="goal-stat">
+              <strong>9</strong>
+              <span>Bàn thắng (5 Kiến tạo)</span>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- BẢNG CHI TIẾT -->
+        <div class="standings-box" style="margin-top: 48px;">
+
+          <div class="section-head" style="margin-bottom: 24px;">
+            <div>
+              <h2>Danh Sách Ghi Bàn Chi Tiết</h2>
+            </div>
+
+            <div class="search-club">
+              <input
+                type="text"
+                placeholder="Tìm cầu thủ hoặc CLB..."
+                aria-label="Ô tìm kiếm cầu thủ">
+            </div>
+          </div>
+
+          <div class="table-wrap">
+            <table class="pl-table">
+
+              <thead>
+                <tr>
+                  <th>Hạng</th>
+                  <th>Cầu thủ</th>
+                  <th>Câu lạc bộ</th>
+                  <th>Số trận</th>
+                  <th>Kiến tạo</th>
+                  <th>Bàn thắng</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td><strong>Erling Haaland</strong></td>
+                  <td>Manchester City</td>
+                  <td>11</td>
+                  <td>2</td>
+                  <td class="pts">14</td>
+                </tr>
+
+                <tr>
+                  <td>2</td>
+                  <td><strong>Mohamed Salah</strong></td>
+                  <td>Liverpool</td>
+                  <td>11</td>
+                  <td>7</td>
+                  <td class="pts">11</td>
+                </tr>
+
+                <tr>
+                  <td>3</td>
+                  <td><strong>Cole Palmer</strong></td>
+                  <td>Chelsea</td>
+                  <td>11</td>
+                  <td>5</td>
+                  <td class="pts">9</td>
+                </tr>
+
+                <tr>
+                  <td>4</td>
+                  <td><strong>Bukayo Saka</strong></td>
+                  <td>Arsenal</td>
+                  <td>11</td>
+                  <td>8</td>
+                  <td class="pts">8</td>
+                </tr>
+
+                <tr>
+                  <td>5</td>
+                  <td><strong>Alexander Isak</strong></td>
+                  <td>Newcastle United</td>
+                  <td>10</td>
+                  <td>2</td>
+                  <td class="pts">8</td>
+                </tr>
+              </tbody>
+
+            </table>
+          </div>
+
+          <p class="scroll-hint">
+            &larr; Vuốt ngang bảng để xem đầy đủ thông số &rarr;
+          </p>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+
+      <p>
+        <strong>PREMIER LEAGUE VIETNAM HUB</strong>
+        — Cổng thông tin bóng đá Ngoại Hạng Anh.
+      </p>
+
+      <p class="copyright">
+        <a href="index.html" style="color: var(--pl-cyan);">
+          &larr; Quay lại trang chủ
+        </a>
+      </p>
+
+    </div>
+  </footer>
+
+</body>
+</html>
