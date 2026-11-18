@@ -8,7 +8,7 @@ Dự án **Premier League Vietnam Hub** là sản phẩm Bài tập lớn A3 mô
 - **Mã sinh viên:** 2071020062
 - **Chuyên ngành:** Công nghệ Thông tin (CNTT20-04)
 - **Trường:** Đại học Đại Nam 
-- **Link truy cập trực tiếp (URL):** [https://github.com/haivunam134-boop/baitapthietkewedAa3]
+- **Link truy cập trực tiếp (URL):** [https://haivunam134-boop.github.io/baitapthietkewedAa3/index.html]
 - **mã nguồn:** [https://github.com/haivunam134-boop/baitapthietkewedAa3]
 - **hồ sơ git hup:**[https://github.com/haivunam134-boop]
 ##  Các tính năng nổi bật
