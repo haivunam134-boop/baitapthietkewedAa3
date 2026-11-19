@@ -15,6 +15,8 @@
 - Mở rộng README để người nhận biết cách mở website local, đi qua các phần chính, kiểm tra biểu mẫu và hiểu các giới hạn của bản mô phỏng.
 - Thêm nhật ký AI nêu rõ dữ kiện ban đầu, gợi ý, quyết định của sinh viên và phần chưa kiểm thử.
 - Thêm ghi chú bàn giao v2 và trạng thái xuất bản.
+- sửa đổi ảnh câu lạc bộ chelsea bị lỗi
+
 
 ## Lỗi đã sửa
 
