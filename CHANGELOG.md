@@ -3,8 +3,7 @@
 Bản bàn giao chính thức.
 
 * **Thay đổi:** Hoàn thiện giao diện và nội dung trang chủ (`index.html`), trang ghi bàn (`ghiban.html`) và tệp định dạng CSS (`styles.css`); kiểm tra tính nhất quán, responsive và triển khai công khai qua GitHub Pages; hoàn thiện bộ tài liệu báo cáo (`README.md`, `RELEASE_NOTES.md`, `AI_LOG.md`).
-* **Ảnh minh chứng:** [Ảnh kiểm tra GitHub Pages].
-* **Chưa kiểm tra:** Hiển thị thực tế trên các thiết bị di động iOS/Android vật lý; kích thước màn hình nhỏ hiện mới chỉ kiểm tra qua công cụ giả lập trên trình duyệt.
+* **Ảnh minh chứng:** [https://github.com/haivunam134-boop/baitapthietkewedAa3/tree/main/ANHMINHCHUNG].PAGE BỊ LỖI VÀ ĐÃ ĐC SỬA 
 
 ---
 
